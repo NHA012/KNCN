@@ -9,7 +9,7 @@
 <%}%>
 <%let dataPieIncomeLabel=["Collect Interest", "Salary","Other Income"];%>
 <%let dataPieIncome=[];%>
-<%let dataPieExpenseLabel=["Food & Beverage","Transportation","Rentals","Bills","Other Expense"];%>
+<%let dataPieExpenseLabel=["Food & Beverage","Transportation","Rentals","Bills","Other Expense","Fun & Relax","Education"];%>
 <%let dataPieExpense=[];%>
 <%for(let i=0; i<moneyPieData.length; i++){%>
   <%if(moneyPieData[i].type == "1"){%>
@@ -89,7 +89,7 @@ var ctx2 = document.getElementById('myPieChart2').getContext('2d');
 
 // Define the data for the pie chart
 var data2 = {
-  labels: ["Food & Beverage","Transportation","Rentals","Bills","Other Expense"],
+  labels: ["Food & Beverage","Transportation","Rentals","Bills","Other Expense","Fun & Relax","Education"],
   datasets: [{
     data: [<%= dataPieExpense.join(',') %>],
     backgroundColor: [
@@ -97,7 +97,9 @@ var data2 = {
       '#FF8E9E',
       '#F47C7C',
       '#EF9F9F',
-      '#FAD4D4'
+      '#FAD4D4',
+      '#F9B5D0',
+      '#FFF2F2'
     ]
   }]
 };

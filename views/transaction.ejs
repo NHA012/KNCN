@@ -55,11 +55,13 @@
     <%if(cate == "Rentals"){return 5;}%>
     <%if(cate == "Bills"){return 6;}%>
     <%if(cate == "Other Expense"){return 7;}%>
-    return 8;
+    <%if(cate == "Fun & Relax"){return 8;}%>
+    <%if(cate == "Education"){return 9;}%>
+    return 10;
   <%}%>
   <%const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];%>
   <%const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];%>
-  <%const imgSrc = ["https://static.moneylover.me/img/icon/icon_118.png","https://static.moneylover.me/img/icon/ic_category_salary.png","https://static.moneylover.me/img/icon/ic_category_other_income.png","https://static.moneylover.me/img/icon/ic_category_foodndrink.png","https://static.moneylover.me/img/icon/ic_category_transport.png","https://static.moneylover.me/img/icon/icon_136.png","https://static.moneylover.me/img/icon/icon_138.png","https://static.moneylover.me/img/icon/ic_category_other_expense.png"];%>
+  <%const imgSrc = ["https://static.moneylover.me/img/icon/icon_118.png","https://static.moneylover.me/img/icon/ic_category_salary.png","https://static.moneylover.me/img/icon/ic_category_other_income.png","https://static.moneylover.me/img/icon/ic_category_foodndrink.png","https://static.moneylover.me/img/icon/ic_category_transport.png","https://static.moneylover.me/img/icon/icon_136.png","https://static.moneylover.me/img/icon/icon_138.png","https://static.moneylover.me/img/icon/ic_category_other_expense.png","https://static.moneylover.me/img/icon/icon_49.png","https://static.moneylover.me/img/icon/ic_category_education.png"];%>
   <body>
     <div class="transaction-content">
       <!--------------------- Tabs bar------------ -->
